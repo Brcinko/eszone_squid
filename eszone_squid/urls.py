@@ -12,5 +12,7 @@ urlpatterns = patterns('',
                        # http_access
                        url(r'^acl_list/$', views.acl_list, name='acl_list'),
                        url(r'^acl_list/(?P<pk>\d+)/$', views.acl_list_detail, name='acl_list_detail'),
+                       # reconfigure
+                       url(r'^update_config/$', views.update_config, name='update_config'),
                        )
 urlpatterns = format_suffix_patterns(urlpatterns)
