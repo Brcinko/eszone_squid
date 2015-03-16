@@ -12,6 +12,11 @@ urlpatterns = patterns('',
                        # http_access
                        url(r'^acl_list/$', views.acl_list, name='acl_list'),
                        url(r'^acl_list/(?P<pk>\d+)/$', views.acl_list_detail, name='acl_list_detail'),
+                       # authentication
+                       url(r'^authentication/$', views.authentication, name='authentication'),
+                       url(r'^authentication_db/$', views.authentication_db, name='authentication_db'),
+                       url(r'^authentication/(?P<pk>\d+)/$', views.authentication_detail, name='authentication_detail'),
+                       url(r'^authentication_db/(?P<pk>\d+)/$', views.authentication_db_detail, name='authentication_db_detail'),
                        # reconfigure
                        url(r'^update_config/$', views.update_config, name='update_config'),
                        )
